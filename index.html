@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso Total</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Acceso Total</h1>
+      <nav id="navbar">
+        <a href="#productos">Productos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="menu-toggle" aria-label="Menú">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Tecnología pensada para todos</h2>
+    <p>Soluciones accesibles para personas con discapacidad visual, auditiva y motora.</p>
+    <a href="#productos" class="btn">Ver productos</a>
+  </section>
+
+  <section id="productos" class="productos">
+    <h3>Nuestros productos destacados</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Teclado Braille">
+        <h4>Teclado Braille Inteligente</h4>
+        <p>Bluetooth y respuesta háptica para una experiencia fluida.</p>
+        <button class="comprar">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Audífonos con transcripción">
+        <h4>Audífonos con transcripción</h4>
+        <p>Transcripción automática en tiempo real.</p>
+        <button class="comprar">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Mouse adaptativo">
+        <h4>Mouse adaptativo 3D</h4>
+        <p>Control ocular o por cabeza para movilidad reducida.</p>
+        <button class="comprar">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="testimonios">
+    <blockquote>
+      "Gracias a Acceso Total puedo trabajar desde casa sin barreras."
+      <br><strong>– Carlos G.</strong>
+    </blockquote>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h3>Contáctanos</h3>
+    <form>
+      <input type="text" placeholder="Nombre" aria-label="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+      <textarea rows="4" placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Acceso Total. Todos los derechos reservados.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

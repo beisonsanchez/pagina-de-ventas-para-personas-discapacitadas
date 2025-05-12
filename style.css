@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1f1f1f, #2a2a2a);
+  color: #f5f5f5;
+}
+
+a {
+  color: #a5b4fc;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #111;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  color: #a5b4fc;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle, #222, #111);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #ccc;
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #4f46e5;
+}
+
+.productos {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+}
+
+.productos h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #a5b4fc;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.card button:hover {
+  background-color: #4f46e5;
+}
+
+.testimonios {
+  padding: 3rem 2rem;
+  background-color: #111;
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+.contacto {
+  padding: 4rem 2rem;
+  background: #1f1f1f;
+}
+
+.contacto h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #a5b4fc;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #2c2c2c;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0f0f0f;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 1rem;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
